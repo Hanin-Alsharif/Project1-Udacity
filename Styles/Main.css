@@ -1,0 +1,134 @@
+
+.card1 {
+    
+    width: 100%;
+    
+  }
+  
+.card2 {
+    
+    width: 100%;
+    
+  }
+
+.card3 {
+    
+    width: 100%;
+    
+  }
+
+ 
+.container{
+ display:grid;
+ height:100vh;
+ grid-template-columns: 1fr 1fr 1fr ;
+ grid-template-rows: 0.4fr 0.1fr 1.6fr 0.3fr;
+ grid-template-areas: 
+    "header header header "
+    " nav nav nav"
+    " content1 content2 content3"
+    " footer footer footer";
+grid-gap:0.2rem;
+ 
+}
+
+header{
+    background:#e6ffee;
+    grid-area: header;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    display: flex;
+  
+   
+   
+}
+.click{
+    
+ border:none;
+ color:white;
+ padding: 15px 25px ;
+ text-align: right; 
+ position: absolute;  
+ font-size: 12px;
+ 
+   
+}
+
+.logo{
+    width: 150px;
+    height: 120px;
+    padding: 3% 1% 1% 40%;
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   
+}
+
+.nav{
+    background:#e67300;
+    grid-area:nav;
+    font-family: 'Kaushan Script', cursive;
+   
+}
+
+.nav-list{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.links{
+
+    text-decoration:none ;
+    color:green;
+    font-weight: bold;
+   
+    
+}
+
+
+#content1{
+    background:#e6ffee;
+    grid-area: content1;
+    padding: 2% 2% 2% 1%;
+}
+
+#content2{
+    background:#e6ffee;
+    grid-area: content2;
+    padding: 2% 2% 2% 1%;
+}
+
+#content3{
+    background:#e6ffee;
+    grid-area: content3;
+    padding: 2% 2% 2% 1%;
+   
+}
+
+figcaption{
+
+    background-color: black;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+footer{
+    background:#e67300;
+   grid-area: footer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color:black;
+   font-family: 'Kaushan Script', cursive;
+}
+
+
+   
+
+    

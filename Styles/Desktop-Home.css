@@ -1,0 +1,14 @@
+@import url("Main.css"); /*Import Desktop size*/
+ /*Desktop size*/
+@media only screen and(min-width:769px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.4fr 0.1fr 1.6fr 0.3fr;
+        grid-template-areas: 
+           "header header header "
+           " nav nav nav"
+           " content1 content2 content3"
+           " footer footer footer";   
+    }
+   }
